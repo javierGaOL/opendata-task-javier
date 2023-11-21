@@ -1,0 +1,541 @@
+Enter name and link of 3 openData portals
+
+https://www.ree.es/en/apidatos
+https://datos.gob.es/
+https://opendata.aemet.es/centrodedescargas/productosAEMET?
+
+Choose one of the projects to analyze it in more depth
+1. Write the name of the chosen project: REE.es
+2. Describe the activity of the project: electricity power of the state update
+3. Number of datasets hosted: I use the api to consult the data of today
+4. Organization (categories?, link to other services?...) Red Electrica
+5. Data types: JSON
+6. File formats: JSON
+
+Choose a dataset
+Write the name of the dataset .json
+Write the URL:https://apidatos.ree.es/es/datos/balance/balance-electrico?start_date=2023-11-20T00:00&end_date=2023-11-20T23:59&time_trunc=day
+Describe the dataset: Data about energy
+What kind of data and in what file format: Data about energy
+
+Think about a "use case" for the chosen dataset. What could you or your company or organization use it for?
+
+
+{
+"data": {
+"attributes": {
+"description": "Balance eléctrico: asignación de unidades de producción según combustible principal. La producción neta de las instalaciones no renovables e hidráulicas UGH tiene descontados los consumos propios de las instalaciones. En dichos tipos de producción una generación negativa indica que la electricidad horaria consumida para los usos de las plantas excede la producción horaria de las instalaciones.",
+"last-update": "2023-11-20T16:48:28.000+01:00",
+"title": "Balance de energía eléctrica"
+},
+"id": "bal1",
+"meta": {
+"cache-control": {
+"cache": "HIT",
+"expireAt": "2023-11-21T16:06:30"
+}
+},
+"type": "Balance de energía eléctrica"
+},
+"included": [
+{
+"attributes": {
+"content": [
+{
+"attributes": {
+"color": "#0090d1",
+"composite": false,
+"description": "10288",
+"last-update": "2023-11-20T16:48:25.000+01:00",
+"magnitude": null,
+"title": "Hidráulica",
+"total": 140388.4,
+"type": "distinct",
+"values": [
+{
+"datetime": "2023-11-20T00:00:00.000+01:00",
+"percentage": 0.380090564871808,
+"value": 140388.4
+}
+]
+},
+"groupId": "Renovable",
+"id": "10288",
+"type": "Hidráulica"
+},
+{
+"attributes": {
+"color": "#6fb114",
+"composite": false,
+"description": "10291",
+"last-update": "2023-11-20T16:48:26.000+01:00",
+"magnitude": null,
+"title": "Eólica",
+"total": 130778.329,
+"type": "distinct",
+"values": [
+{
+"datetime": "2023-11-20T00:00:00.000+01:00",
+"percentage": 0.354072052552783,
+"value": 130778.329
+}
+]
+},
+"groupId": "Renovable",
+"id": "10291",
+"type": "Eólica"
+},
+{
+"attributes": {
+"color": "#e48500",
+"composite": false,
+"description": "1458",
+"last-update": "2023-11-20T16:48:27.000+01:00",
+"magnitude": null,
+"title": "Solar fotovoltaica",
+"total": 79813.904,
+"type": "distinct",
+"values": [
+{
+"datetime": "2023-11-20T00:00:00.000+01:00",
+"percentage": 0.216089875345714,
+"value": 79813.904
+}
+]
+},
+"groupId": "Renovable",
+"id": "1458",
+"type": "Solar fotovoltaica"
+},
+{
+"attributes": {
+"color": "#ff0000",
+"composite": false,
+"description": "1459",
+"last-update": "2023-11-20T16:48:27.000+01:00",
+"magnitude": null,
+"title": "Solar térmica",
+"total": 5967.726,
+"type": "distinct",
+"values": [
+{
+"datetime": "2023-11-20T00:00:00.000+01:00",
+"percentage": 0.016157149353794,
+"value": 5967.726
+}
+]
+},
+"groupId": "Renovable",
+"id": "1459",
+"type": "Solar térmica"
+},
+{
+"attributes": {
+"color": "#00FFFF",
+"composite": false,
+"description": "1455",
+"last-update": "2023-11-20T16:48:26.000+01:00",
+"magnitude": null,
+"title": "Hidroeólica",
+"total": 9.321,
+"type": "distinct",
+"values": [
+{
+"datetime": "2023-11-20T00:00:00.000+01:00",
+"percentage": 2.52358752943272E-05,
+"value": 9.321
+}
+]
+},
+"groupId": "Renovable",
+"id": "1455",
+"type": "Hidroeólica"
+},
+{
+"attributes": {
+"color": "#9a5cbc",
+"composite": false,
+"description": "10292",
+"last-update": "2023-11-20T16:48:27.000+01:00",
+"magnitude": null,
+"title": "Otras renovables",
+"total": 10517,
+"type": "distinct",
+"values": [
+{
+"datetime": "2023-11-20T00:00:00.000+01:00",
+"percentage": 0.0284739513432506,
+"value": 10517
+}
+]
+},
+"groupId": "Renovable",
+"id": "10292",
+"type": "Otras renovables"
+},
+{
+"attributes": {
+"color": "#a0a0a0",
+"composite": false,
+"description": "10295",
+"last-update": "2023-11-20T16:48:28.000+01:00",
+"magnitude": null,
+"title": "Residuos renovables",
+"total": 1880.45,
+"type": "distinct",
+"values": [
+{
+"datetime": "2023-11-20T00:00:00.000+01:00",
+"percentage": 0.00509117065735624,
+"value": 1880.45
+}
+]
+},
+"groupId": "Renovable",
+"id": "10295",
+"type": "Residuos renovables"
+},
+{
+"attributes": {
+"color": "#666666",
+"composite": true,
+"description": null,
+"last-update": "2023-11-20T16:48:25.000+01:00",
+"magnitude": null,
+"title": "Generación renovable",
+"total": 369355.13,
+"type": "Generación renovable",
+"values": [
+{
+"datetime": "2023-11-20T00:00:00.000+01:00",
+"percentage": 1,
+"value": 369355.13
+}
+]
+},
+"groupId": "Renovable",
+"id": "Renovable",
+"type": "Generación renovable"
+}
+],
+"description": null,
+"last-update": "2023-11-20T16:48:25.000+01:00",
+"magnitude": null,
+"title": "Renovable"
+},
+"id": "Renovable",
+"type": "Renovable"
+},
+{
+"attributes": {
+"content": [
+{
+"attributes": {
+"color": "#007cf9",
+"composite": false,
+"description": "1445",
+"last-update": "2023-11-20T16:48:25.000+01:00",
+"magnitude": null,
+"title": "Turbinación bombeo",
+"total": 20337.5,
+"type": "distinct",
+"values": [
+{
+"datetime": "2023-11-20T00:00:00.000+01:00",
+"percentage": 0.0619283095903062,
+"value": 20337.5
+}
+]
+},
+"groupId": "No-Renovable",
+"id": "1445",
+"type": "Turbinación bombeo"
+},
+{
+"attributes": {
+"color": "#464394",
+"composite": false,
+"description": "1446",
+"last-update": "2023-11-20T16:48:25.000+01:00",
+"magnitude": null,
+"title": "Nuclear",
+"total": 145540,
+"type": "distinct",
+"values": [
+{
+"datetime": "2023-11-20T00:00:00.000+01:00",
+"percentage": 0.443173751826584,
+"value": 145540
+}
+]
+},
+"groupId": "No-Renovable",
+"id": "1446",
+"type": "Nuclear"
+},
+{
+"attributes": {
+"color": "#ffcc66",
+"composite": false,
+"description": "1454",
+"last-update": "2023-11-20T16:48:26.000+01:00",
+"magnitude": null,
+"title": "Ciclo combinado",
+"total": 93382.921,
+"type": "distinct",
+"values": [
+{
+"datetime": "2023-11-20T00:00:00.000+01:00",
+"percentage": 0.284353850873269,
+"value": 93382.921
+}
+]
+},
+"groupId": "No-Renovable",
+"id": "1454",
+"type": "Ciclo combinado"
+},
+{
+"attributes": {
+"color": "#993300",
+"composite": false,
+"description": "10289",
+"last-update": "2023-11-20T16:48:25.000+01:00",
+"magnitude": null,
+"title": "Carbón",
+"total": 8153.1,
+"type": "distinct",
+"values": [
+{
+"datetime": "2023-11-20T00:00:00.000+01:00",
+"percentage": 0.0248264388897714,
+"value": 8153.1
+}
+]
+},
+"groupId": "No-Renovable",
+"id": "10289",
+"type": "Carbón"
+},
+{
+"attributes": {
+"color": "#8DA69F",
+"composite": false,
+"description": "10344",
+"last-update": "2023-11-20T16:48:25.000+01:00",
+"magnitude": null,
+"title": "Motores diésel",
+"total": 8027.846,
+"type": "distinct",
+"values": [
+{
+"datetime": "2023-11-20T00:00:00.000+01:00",
+"percentage": 0.0244450366284598,
+"value": 8027.846
+}
+]
+},
+"groupId": "No-Renovable",
+"id": "10344",
+"type": "Motores diésel"
+},
+{
+"attributes": {
+"color": "#00ccff",
+"composite": false,
+"description": "1450",
+"last-update": "2023-11-20T16:48:26.000+01:00",
+"magnitude": null,
+"title": "Turbina de gas",
+"total": 1495.471,
+"type": "distinct",
+"values": [
+{
+"datetime": "2023-11-20T00:00:00.000+01:00",
+"percentage": 0.0045537549389711,
+"value": 1495.471
+}
+]
+},
+"groupId": "No-Renovable",
+"id": "1450",
+"type": "Turbina de gas"
+},
+{
+"attributes": {
+"color": "#AF8E00",
+"composite": false,
+"description": "1451",
+"last-update": "2023-11-20T16:48:26.000+01:00",
+"magnitude": null,
+"title": "Turbina de vapor",
+"total": 3985.637,
+"type": "distinct",
+"values": [
+{
+"datetime": "2023-11-20T00:00:00.000+01:00",
+"percentage": 0.0121363865790082,
+"value": 3985.637
+}
+]
+},
+"groupId": "No-Renovable",
+"id": "1451",
+"type": "Turbina de vapor"
+},
+{
+"attributes": {
+"color": "#cfa2ca",
+"composite": false,
+"description": "10293",
+"last-update": "2023-11-20T16:48:28.000+01:00",
+"magnitude": null,
+"title": "Cogeneración",
+"total": 44270.901,
+"type": "distinct",
+"values": [
+{
+"datetime": "2023-11-20T00:00:00.000+01:00",
+"percentage": 0.134806247718244,
+"value": 44270.901
+}
+]
+},
+"groupId": "No-Renovable",
+"id": "10293",
+"type": "Cogeneración"
+},
+{
+"attributes": {
+"color": "#666666",
+"composite": false,
+"description": "10294",
+"last-update": "2023-11-20T16:48:28.000+01:00",
+"magnitude": null,
+"title": "Residuos no renovables",
+"total": 3210.55,
+"type": "distinct",
+"values": [
+{
+"datetime": "2023-11-20T00:00:00.000+01:00",
+"percentage": 0.00977622295538574,
+"value": 3210.55
+}
+]
+},
+"groupId": "No-Renovable",
+"id": "10294",
+"type": "Residuos no renovables"
+},
+{
+"attributes": {
+"color": "#666666",
+"composite": true,
+"description": null,
+"last-update": "2023-11-20T16:48:25.000+01:00",
+"magnitude": null,
+"title": "Generación no renovable",
+"total": 328403.926,
+"type": "Generación no renovable",
+"values": [
+{
+"datetime": "2023-11-20T00:00:00.000+01:00",
+"percentage": 1,
+"value": 328403.926
+}
+]
+},
+"groupId": "No-Renovable",
+"id": "No-Renovable",
+"type": "Generación no renovable"
+}
+],
+"description": null,
+"last-update": "2023-11-20T16:48:25.000+01:00",
+"magnitude": null,
+"title": "No-Renovable"
+},
+"id": "No-Renovable",
+"type": "No-Renovable"
+},
+{
+"attributes": {
+"content": [
+{
+"attributes": {
+"color": "#4f81bd",
+"composite": false,
+"description": "1472",
+"last-update": "2023-11-20T16:48:28.000+01:00",
+"magnitude": null,
+"title": "Consumos en bombeo",
+"total": -12702.3,
+"type": null,
+"values": [
+{
+"datetime": "2023-11-20T00:00:00.000+01:00",
+"percentage": 0.0173869621198866,
+"value": -12702.3
+}
+]
+},
+"groupId": "Demanda en b.c.",
+"id": "1472",
+"type": "Consumos en bombeo"
+},
+{
+"attributes": {
+"color": "#00608a",
+"composite": false,
+"description": "1474",
+"last-update": "2023-11-20T16:48:28.000+01:00",
+"magnitude": null,
+"title": "Saldo I. internacionales",
+"total": -20103.3,
+"type": null,
+"values": [
+{
+"datetime": "2023-11-20T00:00:00.000+01:00",
+"percentage": 0.0275174823130234,
+"value": -20103.3
+}
+]
+},
+"groupId": "Demanda en b.c.",
+"id": "1474",
+"type": "Saldo I. internacionales"
+},
+{
+"attributes": {
+"color": "#666666",
+"composite": true,
+"description": "Demanda corregida: corregidos los efectos de temperatura y laboralidad.",
+"last-update": "2023-11-20T16:48:28.000+01:00",
+"magnitude": null,
+"title": "Demanda en b.c.",
+"total": 664953.456,
+"type": "Demanda en b.c.",
+"values": [
+{
+"datetime": "2023-11-20T00:00:00.000+01:00",
+"percentage": 1,
+"value": 664953.456
+}
+]
+},
+"groupId": "Demanda en b.c.",
+"id": "Demanda en b.c.",
+"type": "Demanda en b.c."
+}
+],
+"description": "Demanda corregida: corregidos los efectos de temperatura y laboralidad.",
+"last-update": "2023-11-20T16:48:28.000+01:00",
+"magnitude": null,
+"title": "Demanda"
+},
+"id": "Demanda en b.c.",
+"type": "Demanda"
+}
+]
+}
+
